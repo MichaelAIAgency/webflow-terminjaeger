@@ -57,7 +57,9 @@
   // --- Seamless logo marquee: duplicate the track contents once ---
   var track = document.getElementById('tjMarquee');
   if (track) {
-    track.innerHTML += track.innerHTML;
+    var clone = track.cloneNode(true);
+    clone.removeAttribute('id');
+    track.parentNode.appendChild(clone);
   }
 
   // --- Stat counters: animate 0 -> target when scrolled into view ---
