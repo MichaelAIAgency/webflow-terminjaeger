@@ -1,0 +1,9 @@
+# Large media — hosted on Wistia, not in the repo
+*.mp4
+*.mov
+
+# macOS
+.DS_Store
+
+# Local tooling
+.claude/
