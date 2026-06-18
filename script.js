@@ -231,3 +231,15 @@
     nums.forEach(function (n) { io.observe(n); });
   }
 })();
+
+(function () {
+  var bar = document.getElementById('tjAnnounce');
+  if (!bar) return;
+  if (localStorage.getItem('tjAnnounceClosed') === '1') { bar.classList.add('is-hidden'); return; }
+  var btn = document.getElementById('tjAnnounceClose');
+  if (btn) btn.addEventListener('click', function () {
+    bar.classList.add('is-hidden');
+    try { localStorage.setItem('tjAnnounceClosed', '1'); } catch (e) {}
+  });
+})();
+
