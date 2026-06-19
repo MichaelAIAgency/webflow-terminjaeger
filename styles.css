@@ -1501,7 +1501,7 @@ html { scroll-behavior: smooth; }
   .tj-footer__main { grid-template-columns: 1fr 1fr; gap: 36px; }
 }
 @media (max-width: 620px) {
-  .tj-root .tj-announce__badge { display: none; }
+  .tj-root .tj-announce__badge { display: inline-block; }
   .tj-root .tj-announce__inner { padding: 8px 40px 8px 16px; }
   .tj-root .tj-announce__text { font-size: 13px; text-align: left; }
   .tj-nav__inner { height: 68px; }
@@ -1524,7 +1524,7 @@ html { scroll-behavior: smooth; }
   .tj-step__card { padding: 18px 14px; }
   .tj-why__cards { grid-template-columns: 1fr; }
   .tj-why__col--offset { margin-top: 0; }
-  .tj-team__grid { grid-template-columns: 1fr; }
+  .tj-team__grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .tj-step3 { padding: 20px 18px; gap: 16px; }
   .tj-finalcta { padding: 40px 24px 36px; }
   .tj-finalcta .tj-btn { width: 100%; justify-content: center; }
@@ -1725,6 +1725,7 @@ html { scroll-behavior: smooth; }
 .tj-root .tj-legal-full-card .tj-legal-card__body a:hover {
   color: var(--tj-primary);
 }
+
 
 /* ============================================================
    WACHSTUMSPARTNER SECTION (Scoped under .tj-root)
