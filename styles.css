@@ -236,9 +236,12 @@ html { scroll-behavior: smooth; }
   padding: 8px 16px 8px 12px;
   background: var(--tj-white);
   border: 1px solid var(--tj-cream-300);
-  border-radius: 14px;            /* rounded card, NOT a pill -> different form */
+  border-radius: 14px;
   box-shadow: var(--tj-shadow-sm);
+  cursor: pointer;
+  transition: box-shadow .18s ease, transform .18s ease;
 }
+.tj-root .tj-greview:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(0,0,0,.12); }
 .tj-root .tj-greview__g { display: inline-flex; flex: 0 0 auto; }
 .tj-root .tj-greview__body { display: inline-flex; flex-direction: column; line-height: 1.15; }
 .tj-root .tj-greview__top { display: inline-flex; align-items: center; gap: 8px; }
@@ -732,10 +735,10 @@ html { scroll-behavior: smooth; }
 }
 .tj-case__quote {
   font-family: 'Lora', Georgia, serif;
-  font-size: 17px;
+  font-size: 22px;
   font-weight: 600;
   font-style: italic;
-  line-height: 1.85;
+  line-height: 1.65;
   color: var(--tj-white);
   margin: 0;
   padding-bottom: 28px;
@@ -771,7 +774,22 @@ html { scroll-behavior: smooth; }
   display: flex; align-items: center; justify-content: center;
 }
 .tj-case__check svg { width: 13px; height: 13px; }
-.tj-cases__cta { text-align: center; margin-top: 48px; }
+.tj-cases__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 48px;
+  flex-wrap: wrap;
+}
+.tj-cases__cta .tj-greview {
+  border-radius: 8px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(237,188,108,.2);
+  box-shadow: none;
+}
+.tj-cases__cta .tj-greview__top b { color: var(--tj-white); }
+.tj-cases__cta .tj-greview__label { color: rgba(245,243,237,.55); }
 
 /* ============================================================
    SO FUNKTIONIERT'S — timeline
@@ -1169,10 +1187,42 @@ html { scroll-behavior: smooth; }
 }
 .tj-about__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .tj-about__ph { font-size: 14px; letter-spacing: .1em; text-transform: uppercase; color: var(--tj-gray-400); }
-.tj-about__body .tj-section-title { margin-bottom: 22px; }
-.tj-about__body p { font-size: 16px; line-height: 1.7; color: var(--tj-gray-500); margin-bottom: 16px; max-width: 600px; }
-.tj-about__body p b { color: var(--tj-primary); font-weight: 700; }
-.tj-about__cta { margin-top: 14px; }
+.tj-about__body .tj-section-title { margin-bottom: 28px; }
+.tj-about__achievements {
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.tj-about__achievements li {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--tj-cream-300);
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--tj-gray-600);
+}
+.tj-about__achievements li:first-child { border-top: 1px solid var(--tj-cream-300); }
+.tj-about__ach-icon {
+  flex: 0 0 auto;
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  background: rgba(31,73,57,.08);
+  color: var(--tj-primary);
+  display: flex; align-items: center; justify-content: center;
+  margin-top: 1px;
+}
+.tj-about__ach-icon svg { width: 20px; height: 20px; }
+.tj-about__ach-num {
+  color: var(--tj-secondary);
+  font-weight: 800;
+  font-size: 16px;
+}
+.tj-about__cta { margin-top: 4px; }
 
 /* ============================================================
    TEAM
