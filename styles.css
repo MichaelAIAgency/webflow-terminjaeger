@@ -395,8 +395,11 @@ html { scroll-behavior: smooth; }
   gap: 56px;
   width: max-content;
   flex-shrink: 0;
+  will-change: transform;
   animation: tj-marquee 28s linear infinite;
+  animation-play-state: paused;
 }
+.tj-marquee__track.is-running { animation-play-state: running; }
 .tj-marquee:hover .tj-marquee__track { animation-play-state: paused; }
 .tj-marquee__item {
   font-family: 'Lora', Georgia, serif;
@@ -466,7 +469,7 @@ html { scroll-behavior: smooth; }
    KUNDENSTIMMEN — dark band carousel
    ============================================================ */
 .tj-testi {
-  margin-top: 64px;
+  margin-top: 160px;
   padding: 72px 0 76px;
   background: linear-gradient(170deg, #1f4939 0%, #123026 55%, #0b2018 100%);
   scroll-margin-top: 90px;
@@ -1838,5 +1841,34 @@ html { scroll-behavior: smooth; }
   }
 }
 
+/* ============================================================
+   JAGD-SEQUENZ  (process flow image + stage cards)
+   ============================================================ */
+.tj-jagd { position: relative; padding: 94px 0 96px; background: linear-gradient(172deg, #1f4939 0%, #123026 55%, #0b2018 100%); overflow: hidden; scroll-margin-top: 90px; }
+.tj-jagd::before { content: ""; position: absolute; inset: 0; background: radial-gradient(640px 320px at 80% 6%, rgba(237,188,108,.13), transparent 60%); pointer-events: none; }
+.tj-jagd .tj-container { position: relative; z-index: 2; }
+.tj-jagd .tj-section-title { color: #fff; }
+.tj-jagd .tj-section-sub { color: rgba(245,243,237,.78); max-width: 640px; margin-left: auto; margin-right: auto; }
+.tj-jagd__grid { display: grid; grid-template-columns: 0.92fr 1fr; gap: 44px; align-items: stretch; margin-top: 46px; }
+.tj-jagd__visual { align-self: start; margin: 0; padding: 12px; border-radius: 22px; background: rgba(255,255,255,.05); border: 1px solid rgba(237,188,108,.28); -webkit-backdrop-filter: blur(7px); backdrop-filter: blur(7px); box-shadow: 0 28px 64px -22px rgba(0,0,0,.65); }
+.tj-jagd__visual svg { display: block; width: 100%; height: auto; border-radius: 14px; }
+.tj-jagd__cards { display: flex; flex-direction: column; justify-content: space-between; gap: 22px; }
+.tj-jagd__card { position: relative; padding: 30px 30px 28px; border-radius: 20px; background: rgba(255,255,255,.055); border: 1px solid rgba(237,188,108,.2); -webkit-backdrop-filter: blur(7px); backdrop-filter: blur(7px); transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+.tj-jagd__card:hover { transform: translateY(-4px); border-color: rgba(237,188,108,.5); box-shadow: 0 18px 40px -18px rgba(0,0,0,.55); }
+.tj-jagd__num { display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; font-family: 'Lora', Georgia, serif; font-weight: 600; font-size: 18px; color: #1b2c20; background: linear-gradient(150deg, var(--tj-secondary-light), var(--tj-secondary)); box-shadow: 0 8px 20px -6px rgba(237,188,108,.55); margin-bottom: 16px; }
 
-
+.tj-jagd__card-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.tj-jagd__num { margin-bottom: 0; }
+.tj-jagd__icon { width: 30px; height: 30px; color: var(--tj-secondary-light); flex: 0 0 auto; }
+.tj-jagd__card h3 { font-family: 'Lora', Georgia, serif; font-weight: 600; font-size: 21px; color: #fff; margin-bottom: 10px; }
+.tj-jagd__card p { font-size: 15px; line-height: 1.65; color: rgba(245,243,237,.74); }
+.tj-jagd__cta { text-align: center; margin-top: 50px; }
+@media (max-width: 900px) {
+  .tj-jagd__grid { grid-template-columns: 1fr; gap: 30px; }
+  .tj-jagd__visual { max-width: 560px; margin: 0 auto; width: 100%; }
+  .tj-jagd__cards { gap: 16px; }
+}
+@media (max-width: 520px) {
+  .tj-jagd { padding: 70px 0 76px; }
+  .tj-jagd__card { padding: 24px 22px; }
+}

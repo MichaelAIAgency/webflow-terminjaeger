@@ -54,13 +54,41 @@
     });
   });
 
-  // --- Seamless logo marquee: duplicate the track contents once ---
-  var track = document.getElementById('tjMarquee');
-  if (track) {
-    var clone = track.cloneNode(true);
-    clone.removeAttribute('id');
-    track.parentNode.appendChild(clone);
-  }
+  // --- Seamless logo marquee ---
+  // Wait for every logo image to settle (load or error), THEN clone the track
+  // so both copies are identical, then start the CSS animation.
+  // This prevents the "cut" caused by onerror removals happening after the
+  // clone was already made, leaving the two tracks at different widths.
+  (function () {
+    var track = document.getElementById('tjMarquee');
+    if (!track) return;
+    var imgs = Array.from(track.querySelectorAll('img'));
+    var remaining = imgs.length || 1;
+
+    function onSettle() {
+      remaining -= 1;
+      if (remaining > 0) return;
+      // All images settled — clone now so both tracks are identical
+      var clone = track.cloneNode(true);
+      clone.removeAttribute('id');
+      clone.setAttribute('aria-hidden', 'true');
+      track.parentNode.appendChild(clone);
+      // Start animation on both tracks simultaneously
+      track.classList.add('is-running');
+      clone.classList.add('is-running');
+    }
+
+    if (imgs.length === 0) { onSettle(); return; }
+    imgs.forEach(function (img) {
+      if (img.complete) {
+        // already done (cached or data-uri)
+        onSettle();
+      } else {
+        img.addEventListener('load', onSettle, { once: true });
+        img.addEventListener('error', function () { img.remove(); onSettle(); }, { once: true });
+      }
+    });
+  }());
 
   // --- Stat counters: animate 0 -> target when scrolled into view ---
   function animateCount(el) {

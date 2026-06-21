@@ -1,0 +1,135 @@
+<svg width="100%" viewBox="0 0 920 1770" xmlns="http://www.w3.org/2000/svg" role="img" font-family="Inter, system-ui, sans-serif">
+<title>Die Jagd-Sequenz – B2B Akquise-Prozess von Terminjäger</title><desc>Vollständiger Sales-Prozess über E-Mail, Telefon und LinkedIn bis zum Abschluss und Upsell.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#1f4939"/><stop offset="1" stop-color="#08160f"/></linearGradient>
+<linearGradient id="g_green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d5a47"/><stop offset="1" stop-color="#1f4939"/></linearGradient>
+<linearGradient id="g_copper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c68857"/><stop offset="1" stop-color="#a5683c"/></linearGradient>
+<linearGradient id="g_blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a6bb0"/><stop offset="1" stop-color="#274e84"/></linearGradient>
+<linearGradient id="g_dark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c4636"/><stop offset="1" stop-color="#0b2018"/></linearGradient>
+<linearGradient id="g_darkg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a4030"/><stop offset="1" stop-color="#0c2218"/></linearGradient>
+<linearGradient id="g_gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#edbc6c"/><stop offset="1" stop-color="#c68857"/></linearGradient>
+<linearGradient id="g_red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b5403e"/><stop offset="1" stop-color="#7e2422"/></linearGradient>
+<linearGradient id="g_pos" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#41823b"/><stop offset="1" stop-color="#2a5520"/></linearGradient>
+<linearGradient id="g_muted" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a4a42"/><stop offset="1" stop-color="#26332c"/></linearGradient>
+<linearGradient id="g_amber" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#caa05a"/><stop offset="1" stop-color="#9c7330"/></linearGradient>
+<linearGradient id="g_violet" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7b5fb0"/><stop offset="1" stop-color="#4d3680"/></linearGradient>
+<marker id="ah" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0.5 1 L9 5 L0.5 9 Z" fill="#edbc6c"/></marker>
+<filter id="sh" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.35"/></filter>
+<radialGradient id="glow" cx="0.8" cy="0.1" r="0.6"><stop offset="0" stop-color="#edbc6c" stop-opacity="0.16"/><stop offset="1" stop-color="#edbc6c" stop-opacity="0"/></radialGradient>
+</defs>
+<rect x="0" y="0" width="920" height="1770" rx="20" fill="url(#bg)"/><rect x="0" y="0" width="920" height="1770" rx="20" fill="url(#glow)"/>
+<line x1="40" y1="48" x2="880" y2="48" stroke="#edbc6c" stroke-opacity="0.22"/><text x="44" y="38" fill="#edbc6c" font-size="13" font-weight="700" letter-spacing="2">1 · LEAD-QUELLE &amp; DATENERFASSUNG</text>
+<line x1="40" y1="258" x2="880" y2="258" stroke="#edbc6c" stroke-opacity="0.22"/><text x="44" y="248" fill="#edbc6c" font-size="13" font-weight="700" letter-spacing="2">2 · OUTREACH-SEQUENZEN</text>
+<line x1="40" y1="1168" x2="880" y2="1168" stroke="#edbc6c" stroke-opacity="0.22"/><text x="44" y="1158" fill="#edbc6c" font-size="13" font-weight="700" letter-spacing="2">3 · QUALIFIZIERUNG &amp; ABSCHLUSS</text>
+<path d="M 170 123.0 L 170 161.0 L 450 161.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 450 123.0 L 450 161.0 L 450 161.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 730 123.0 L 730 161.0 L 450 161.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 450 161.0 L 450 177.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 450 223.0 L 450 239.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 450 239.0 L 170 239.0 L 170 277.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 450 239.0 L 450 239.0 L 450 277.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 450 239.0 L 730 239.0 L 730 277.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 730 323.0 L 730 349.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 730 395.0 L 730 421.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 170 323.0 L 170 506.0 L 450 506.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 450 323.0 L 450 506.0 L 450 506.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 730 467.0 L 730 506.0 L 450 506.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 450 506.0 L 450 522.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 450 568.0 L 450 584.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 450 584.0 L 170 584.0 L 170 622.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 450 584.0 L 450 584.0 L 450 622.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 450 584.0 L 730 584.0 L 730 622.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 450 668.0 L 450 707.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 450 753.0 L 450 769.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 450 769.0 L 315 769.0 L 315 797.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 450 769.0 L 470 769.0 L 470 797.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 450 769.0 L 640 769.0 L 640 797.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 470 843.0 L 470 882.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 470 928.0 L 470 944.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 470 944.0 L 390 944.0 L 390 972.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 470 944.0 L 565 944.0 L 565 972.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 170 668.0 C 170 875.0 150 875.0 150 1082.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 315 843.0 C 315 962.5 195 962.5 195 1082.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 390 1018.0 C 390 1050.0 240 1050.0 240 1082.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 730 668.0 L 730 1066.0 L 460 1066.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 640 843.0 L 640 1066.0 L 460 1066.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 565 1018.0 L 565 1066.0 L 460 1066.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 460 1066.0 L 460 1082.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 460 1128.0 L 460 1182.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 460 1228.0 L 460 1267.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 460 1333.0 L 460 1349.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 460 1349.0 L 460 1349.0 L 460 1382.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 460 1349.0 L 720 1349.0 L 720 1382.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 460 1428.0 L 460 1444.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 460 1444.0 L 460 1444.0 L 460 1477.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 460 1444.0 L 610 1444.0 L 610 1477.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 720 1428.0 L 720 1500 L 677.5 1500" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 460 1523.0 L 460 1572.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 460 1618.0 L 460 1667.0" fill="none" stroke="#d8b46e" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah)"/>
+<path d="M 130 1082 L 55 1082 L 55 545 L 357.5 545" fill="none" stroke="#edbc6c" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#ah)"/>
+<text x="62" y="815" fill="#f3cd82" font-size="14" font-weight="700" letter-spacing="0.5" transform="rotate(-90 62 815)" text-anchor="middle" opacity="1">erneute Ansprache</text>
+<path d="M 610 1523.0 L 610 1548 L 880 1548 L 880 1040 L 190 1040 L 190 1082.0" fill="none" stroke="#edbc6c" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#ah)"/>
+<path d="M 397.5 1690 L 335 1690 L 335 1500 L 397.5 1500" fill="none" stroke="#edbc6c" stroke-width="2" stroke-opacity="0.82" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5" marker-end="url(#ah)"/>
+<text x="327" y="1595" fill="#edbc6c" font-size="11" transform="rotate(-90 327 1595)" text-anchor="middle" opacity="0.85">Folgegeschäft</text>
+<g filter="url(#sh)"><rect x="100.0" y="77.0" width="140" height="46" rx="11" fill="url(#g_green)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="101.0" y="78.0" width="138" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="170" y="105" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">✉ E-Mail</text>
+<g filter="url(#sh)"><rect x="380.0" y="77.0" width="140" height="46" rx="11" fill="url(#g_copper)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="381.0" y="78.0" width="138" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="450" y="105" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">☎ Telefon</text>
+<g filter="url(#sh)"><rect x="660.0" y="77.0" width="140" height="46" rx="11" fill="url(#g_blue)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="661.0" y="78.0" width="138" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="730" y="105" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">in LinkedIn</text>
+<g filter="url(#sh)"><rect x="365.0" y="177.0" width="170" height="46" rx="11" fill="url(#g_violet)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="366.0" y="178.0" width="168" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="450" y="205" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">CRM-System</text>
+<g filter="url(#sh)"><rect x="100.0" y="277.0" width="140" height="46" rx="11" fill="url(#g_green)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="101.0" y="278.0" width="138" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="170" y="305" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Cold Mail</text>
+<g filter="url(#sh)"><rect x="380.0" y="277.0" width="140" height="46" rx="11" fill="url(#g_copper)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="381.0" y="278.0" width="138" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="450" y="305" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Cold Call</text>
+<g filter="url(#sh)"><rect x="655.0" y="277.0" width="150" height="46" rx="11" fill="url(#g_blue)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="656.0" y="278.0" width="148" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="730" y="305" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Vernetzung</text>
+<g filter="url(#sh)"><rect x="627.5" y="349.0" width="205" height="46" rx="11" fill="url(#g_blue)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="628.5" y="350.0" width="203" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="730" y="377" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Vernetzung bestätigt</text>
+<g filter="url(#sh)"><rect x="660.0" y="421.0" width="140" height="46" rx="11" fill="url(#g_blue)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="661.0" y="422.0" width="138" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="730" y="449" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Nachricht</text>
+<g filter="url(#sh)"><rect x="357.5" y="522.0" width="185" height="46" rx="11" fill="url(#g_dark)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="358.5" y="523.0" width="183" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="450" y="550" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Erster Outreach</text>
+<g filter="url(#sh)"><rect x="87.5" y="622.0" width="165" height="46" rx="11" fill="url(#g_muted)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="88.5" y="623.0" width="163" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="170" y="650" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Kein Interesse</text>
+<g filter="url(#sh)"><rect x="370.0" y="622.0" width="160" height="46" rx="11" fill="url(#g_amber)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="371.0" y="623.0" width="158" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="450" y="650" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Keine Antwort</text>
+<g filter="url(#sh)"><rect x="662.5" y="622.0" width="135" height="46" rx="11" fill="url(#g_pos)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="663.5" y="623.0" width="133" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="730" y="650" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Interesse</text>
+<g filter="url(#sh)"><rect x="380.0" y="707.0" width="140" height="46" rx="11" fill="url(#g_darkg)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="381.0" y="708.0" width="138" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="450" y="735" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Follow Up 1</text>
+<g filter="url(#sh)"><rect x="255.0" y="797.0" width="120" height="46" rx="11" fill="url(#g_muted)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="256.0" y="798.0" width="118" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="315" y="825" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Kein Int.</text>
+<g filter="url(#sh)"><rect x="392.5" y="797.0" width="155" height="46" rx="11" fill="url(#g_amber)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="393.5" y="798.0" width="153" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="470" y="825" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Keine Antwort</text>
+<g filter="url(#sh)"><rect x="580.0" y="797.0" width="120" height="46" rx="11" fill="url(#g_pos)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="581.0" y="798.0" width="118" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="640" y="825" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Interesse</text>
+<g filter="url(#sh)"><rect x="400.0" y="882.0" width="140" height="46" rx="11" fill="url(#g_darkg)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="401.0" y="883.0" width="138" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="470" y="910" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Follow Up 2</text>
+<g filter="url(#sh)"><rect x="330.0" y="972.0" width="120" height="46" rx="11" fill="url(#g_muted)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="331.0" y="973.0" width="118" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="390" y="1000" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Kein Int.</text>
+<g filter="url(#sh)"><rect x="505.0" y="972.0" width="120" height="46" rx="11" fill="url(#g_pos)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="506.0" y="973.0" width="118" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="565" y="1000" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Interesse</text>
+<g filter="url(#sh)"><rect x="62.5" y="1082.0" width="255" height="46" rx="11" fill="url(#g_gold)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="63.5" y="1083.0" width="253" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="190" y="1110" text-anchor="middle" fill="#1b2c20" font-size="14.5" font-weight="700">Follow Up nach 3 Monaten</text>
+<g filter="url(#sh)"><rect x="337.5" y="1082.0" width="245" height="46" rx="11" fill="url(#g_violet)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="338.5" y="1083.0" width="243" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="460" y="1110" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">CRM-Automatisierung</text>
+<g filter="url(#sh)"><rect x="380.0" y="1182.0" width="160" height="46" rx="11" fill="url(#g_copper)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="381.0" y="1183.0" width="158" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="460" y="1210" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Warmer Anruf</text>
+<g filter="url(#sh)"><rect x="307.5" y="1267.0" width="305" height="66" rx="11" fill="url(#g_copper)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="308.5" y="1268.0" width="303" height="33.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="460" y="1296" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Vorqualifizierung</text>
+<text x="460" y="1315" text-anchor="middle" fill="#edbc6c" font-size="11">Budget · Bedarf · Interesse · Entscheider</text>
+<g filter="url(#sh)"><rect x="357.5" y="1382.0" width="205" height="46" rx="11" fill="url(#g_darkg)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="358.5" y="1383.0" width="203" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="460" y="1410" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Abschlussgespräch</text>
+<g filter="url(#sh)"><rect x="645.0" y="1382.0" width="150" height="46" rx="11" fill="url(#g_red)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="646.0" y="1383.0" width="148" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="720" y="1410" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Unqualifiziert</text>
+<g filter="url(#sh)"><rect x="397.5" y="1477.0" width="125" height="46" rx="11" fill="url(#g_pos)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="398.5" y="1478.0" width="123" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="460" y="1505" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Deal ✓</text>
+<g filter="url(#sh)"><rect x="542.5" y="1477.0" width="135" height="46" rx="11" fill="url(#g_red)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="543.5" y="1478.0" width="133" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="610" y="1505" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">No Deal</text>
+<g filter="url(#sh)"><rect x="382.5" y="1572.0" width="155" height="46" rx="11" fill="url(#g_pos)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="383.5" y="1573.0" width="153" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="460" y="1600" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Kundencall</text>
+<g filter="url(#sh)"><rect x="397.5" y="1667.0" width="125" height="46" rx="11" fill="url(#g_pos)" stroke="#edbc6c" stroke-opacity="0.5" stroke-width="1.3"/><rect x="398.5" y="1668.0" width="123" height="23.0" rx="10" fill="#ffffff" fill-opacity="0.07"/></g>
+<text x="460" y="1695" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">Upsell</text>
+</svg>
