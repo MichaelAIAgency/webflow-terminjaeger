@@ -1,0 +1,258 @@
+<!-- PASTE INTO: a new Webflow Embed block, placed directly AFTER the "So funktioniert's" embed -->
+
+<div class="tj-root">
+<section class="jagd" id="jagdSequenz">
+  <style>
+    .jagd {
+      --g-dark: #0a2f1f;
+      --g-mid: #123026;
+      --g-deep: #0b2018;
+      --gold: var(--tj-secondary-light, #edbc6c);
+      --copper: var(--tj-secondary, #c68857);
+      --cream: var(--tj-cream-100, #f5f3ed);
+      position: relative;
+      padding: 92px 0 96px;
+      background: linear-gradient(175deg, #1f4939 0%, #123026 55%, #0b2018 100%);
+      overflow: hidden;
+    }
+    .jagd::before {
+      content: "";
+      position: absolute; inset: 0;
+      background: radial-gradient(620px 320px at 78% 12%, rgba(237,188,108,.14), transparent 60%);
+      pointer-events: none;
+    }
+    .jagd .tj-container { position: relative; z-index: 2; }
+
+    /* ---------- header ---------- */
+    .jagd__head { text-align: center; max-width: 760px; margin: 0 auto 18px; }
+    .jagd__eyebrow {
+      display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: .16em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 14px;
+    }
+    .jagd__title {
+      font-family: 'Lora', Georgia, serif; color: #fff; line-height: 1.1;
+      font-size: clamp(30px, 5vw, 50px); font-weight: 600; margin-bottom: 16px;
+    }
+    .jagd__title .g { color: var(--gold); }
+    .jagd__sub { color: rgba(245,243,237,.78); font-size: 17px; line-height: 1.6; }
+
+    /* ---------- formula chips ---------- */
+    .jagd__formula {
+      display: flex; align-items: center; justify-content: center; flex-wrap: wrap;
+      gap: 14px; margin: 40px auto 8px;
+    }
+    .jagd-chip {
+      display: flex; align-items: center; gap: 11px;
+      padding: 14px 22px; border-radius: 16px;
+      background: rgba(255,255,255,.05); border: 1px solid rgba(237,188,108,.28);
+      color: #fff; font-weight: 700; font-size: 16px; white-space: nowrap;
+      backdrop-filter: blur(4px);
+      animation: jagd-glow 3s ease-in-out infinite;
+    }
+    .jagd-chip:nth-child(3) { animation-delay: .6s; }
+    .jagd-chip:nth-child(5) { animation-delay: 1.2s; }
+    .jagd-chip svg { width: 22px; height: 22px; flex: 0 0 auto; }
+    .jagd-chip__plus { color: var(--gold); font-size: 26px; font-weight: 700; }
+    @keyframes jagd-glow {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(237,188,108,0); border-color: rgba(237,188,108,.28); }
+      50% { box-shadow: 0 0 26px -4px rgba(237,188,108,.45); border-color: rgba(237,188,108,.6); }
+    }
+
+    /* ---------- flow pipeline ---------- */
+    .jagd-flow {
+      display: flex; align-items: stretch; justify-content: center; flex-wrap: nowrap;
+      gap: 0; margin: 46px auto 18px; max-width: 1000px;
+    }
+    .jagd-node {
+      flex: 1 1 0; min-width: 0; text-align: center;
+      padding: 22px 16px; border-radius: 18px;
+      background: rgba(255,255,255,.055); border: 1px solid rgba(255,255,255,.1);
+      backdrop-filter: blur(4px);
+    }
+    .jagd-node--win { border-color: rgba(237,188,108,.55); background: rgba(237,188,108,.08); }
+    .jagd-node__step { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
+    .jagd-node__title { color: #fff; font-weight: 700; font-size: 17px; margin: 8px 0 6px; line-height: 1.25; }
+    .jagd-node__desc { color: rgba(245,243,237,.66); font-size: 13.5px; line-height: 1.45; }
+    .jagd-link {
+      flex: 0 0 52px; align-self: center; height: 3px; margin: 0 -2px; position: relative;
+      background: rgba(237,188,108,.18); border-radius: 3px; overflow: hidden;
+    }
+    .jagd-link::after {
+      content: ""; position: absolute; top: 0; left: -45%; width: 45%; height: 100%;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      animation: jagd-travel 2.2s linear infinite;
+    }
+    .jagd-link:nth-of-type(4)::after { animation-delay: .5s; }
+    .jagd-link:nth-of-type(6)::after { animation-delay: 1s; }
+    @keyframes jagd-travel { to { left: 145%; } }
+
+    /* ---------- step cards ---------- */
+    .jagd-steps {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin-top: 56px;
+    }
+    .jagd-card {
+      position: relative; padding: 40px 24px 28px; border-radius: 20px;
+      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.025));
+      border: 1px solid rgba(255,255,255,.1);
+      transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+    }
+    .jagd-card:hover {
+      transform: translateY(-6px); border-color: rgba(237,188,108,.55);
+      box-shadow: 0 18px 40px -16px rgba(0,0,0,.5);
+    }
+    .jagd-card__num {
+      position: absolute; top: -18px; left: 50%; transform: translateX(-50%);
+      width: 44px; height: 44px; border-radius: 50%;
+      display: grid; place-items: center; font-weight: 700; font-size: 16px; color: var(--g-deep);
+      background: linear-gradient(150deg, var(--gold), var(--copper));
+      box-shadow: 0 8px 20px -6px rgba(237,188,108,.6);
+    }
+    .jagd-card__icon { width: 40px; height: 40px; margin: 6px auto 14px; color: var(--gold); display: block; }
+    .jagd-card__title { color: #fff; font-weight: 700; font-size: 18px; text-align: center; margin-bottom: 12px; }
+    .jagd-card__text { color: rgba(245,243,237,.72); font-size: 14.5px; line-height: 1.6; text-align: center; }
+
+    /* ---------- cta ---------- */
+    .jagd__cta { text-align: center; margin-top: 50px; }
+    .jagd__cta .tj-btn { font-size: 17px; }
+
+    /* ---------- reveal ---------- */
+    .jagd-rev { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
+    .jagd-rev.is-in { opacity: 1; transform: none; }
+
+    /* ---------- responsive ---------- */
+    @media (max-width: 860px) {
+      .jagd-flow { flex-direction: column; align-items: stretch; gap: 0; max-width: 420px; }
+      .jagd-link { width: 3px; height: 34px; align-self: center; margin: -2px 0; }
+      .jagd-link::after {
+        left: 0; top: -45%; width: 100%; height: 45%;
+        background: linear-gradient(180deg, transparent, var(--gold), transparent);
+        animation: jagd-travel-v 2.2s linear infinite;
+      }
+      @keyframes jagd-travel-v { to { top: 145%; } }
+      .jagd-steps { grid-template-columns: repeat(2, 1fr); gap: 30px 18px; margin-top: 48px; }
+    }
+    @media (max-width: 520px) {
+      .jagd { padding: 70px 0 76px; }
+      .jagd-steps { grid-template-columns: 1fr; gap: 34px; }
+      .jagd__formula { gap: 10px; }
+      .jagd-chip { padding: 12px 16px; font-size: 15px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .jagd-chip, .jagd-link::after { animation: none !important; }
+      .jagd-rev { opacity: 1; transform: none; }
+    }
+  </style>
+
+  <div class="tj-container">
+
+    <div class="jagd__head jagd-rev">
+      <span class="jagd__eyebrow">Unser System</span>
+      <h2 class="jagd__title">Die <span class="g">Jagd-Sequenz</span></h2>
+      <p class="jagd__sub">E-Mail. LinkedIn. Telefon. Drei Kanäle, ein Ziel: vorqualifizierte Termine direkt in deinem Kalender. So jagen wir für dich die richtigen Entscheider.</p>
+    </div>
+
+    <!-- Formula -->
+    <div class="jagd__formula jagd-rev">
+      <span class="jagd-chip">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        E-Mail
+      </span>
+      <span class="jagd-chip__plus">+</span>
+      <span class="jagd-chip">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21H17.6v-5.5c0-1.3-.02-3-1.85-3-1.85 0-2.13 1.43-2.13 2.9V21H9z"/></svg>
+        LinkedIn
+      </span>
+      <span class="jagd-chip__plus">+</span>
+      <span class="jagd-chip">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M5 4h3l1.5 4.5L7.5 10a11 11 0 005 5l1.5-2 4.5 1.5V18a2 2 0 01-2 2A14 14 0 014 6a2 2 0 011-2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        Telefon
+      </span>
+    </div>
+
+    <!-- Animated pipeline -->
+    <div class="jagd-flow jagd-rev">
+      <div class="jagd-node">
+        <div class="jagd-node__step">Schritt 1</div>
+        <div class="jagd-node__title">3 Kanäle, täglich</div>
+        <div class="jagd-node__desc">Wir sprechen deine Entscheider parallel über E-Mail, LinkedIn und Telefon an.</div>
+      </div>
+      <div class="jagd-link"></div>
+      <div class="jagd-node">
+        <div class="jagd-node__step">Schritt 2</div>
+        <div class="jagd-node__title">Vorqualifiziert</div>
+        <div class="jagd-node__desc">Budget, Bedarf und Timing werden geprüft, bevor ein Termin entsteht.</div>
+      </div>
+      <div class="jagd-link"></div>
+      <div class="jagd-node jagd-node--win">
+        <div class="jagd-node__step">Schritt 3</div>
+        <div class="jagd-node__title">Termin im Kalender</div>
+        <div class="jagd-node__desc">Du sprichst nur noch mit echten Entscheidern, die starten wollen.</div>
+      </div>
+      <div class="jagd-link"></div>
+      <div class="jagd-node jagd-node--win">
+        <div class="jagd-node__step">Schritt 4</div>
+        <div class="jagd-node__title">Abschluss &amp; Wachstum</div>
+        <div class="jagd-node__desc">Du schließt ab – planbar, Monat für Monat, unabhängig vom Zufall.</div>
+      </div>
+    </div>
+
+    <!-- Detailed steps -->
+    <div class="jagd-steps">
+      <article class="jagd-card jagd-rev">
+        <span class="jagd-card__num">01</span>
+        <svg class="jagd-card__icon" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M21 21l-4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <h3 class="jagd-card__title">Zielgruppe schärfen</h3>
+        <p class="jagd-card__text">Gemeinsam mit dir definieren wir die Entscheider, die wirklich zu deinem Angebot passen – keine Streuverluste.</p>
+      </article>
+      <article class="jagd-card jagd-rev">
+        <span class="jagd-card__num">02</span>
+        <svg class="jagd-card__icon" viewBox="0 0 24 24" fill="none"><path d="M3 12a9 9 0 1018 0 9 9 0 00-18 0z" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v4l2.5 2.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <h3 class="jagd-card__title">Auf allen Kanälen präsent</h3>
+        <p class="jagd-card__text">Dein Angebot landet über E-Mail, LinkedIn und Telefon bei genau diesen Entscheidern – jeden Tag, ohne dass du etwas tun musst.</p>
+      </article>
+      <article class="jagd-card jagd-rev">
+        <span class="jagd-card__num">03</span>
+        <svg class="jagd-card__icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18M8 3v4M16 3v4M9.5 14l1.8 1.8L15 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 class="jagd-card__title">Termine im Kalender</h3>
+        <p class="jagd-card__text">Zeigt ein Entscheider Interesse, sicherst du dir einen festen Termin – vorqualifiziert nach Budget, Bedarf und Timing.</p>
+      </article>
+      <article class="jagd-card jagd-rev">
+        <span class="jagd-card__num">04</span>
+        <svg class="jagd-card__icon" viewBox="0 0 24 24" fill="none"><path d="M4 19V5M4 19h16M7 16l4-5 3 3 5-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 class="jagd-card__title">Abschluss &amp; Wachstum</h3>
+        <p class="jagd-card__text">Du führst das Gespräch – wir geben dir die Vorlagen und Tipps, damit du planbar mehr Abschlüsse holst.</p>
+      </article>
+    </div>
+
+    <div class="jagd__cta jagd-rev">
+      <a href="https://meetings-eu1.hubspot.com/snupchester/clone?uuid=7abbbe63-bb38-4d03-8bde-6fd9b1dd6e57" class="tj-btn tj-btn--gold tj-btn--lg">
+        <span class="tj-btn__arrow">→</span> Jetzt kostenfreies Erstgespräch sichern
+      </a>
+    </div>
+
+  </div>
+
+  <script>
+  (function () {
+    var sec = document.getElementById('jagdSequenz');
+    if (!sec || sec.dataset.jagdInit) return;
+    sec.dataset.jagdInit = '1';
+    var items = sec.querySelectorAll('.jagd-rev');
+    if (!('IntersectionObserver' in window)) { items.forEach(function (i) { i.classList.add('is-in'); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e, idx) {
+        if (e.isIntersecting) {
+          var el = e.target;
+          var delay = el.classList.contains('jagd-card')
+            ? (Array.prototype.indexOf.call(el.parentNode.children, el) * 120)
+            : 0;
+          setTimeout(function () { el.classList.add('is-in'); }, delay);
+          io.unobserve(el);
+        }
+      });
+    }, { threshold: 0.18 });
+    items.forEach(function (i) { io.observe(i); });
+  })();
+  </script>
+</section>
+</div>

@@ -1,0 +1,88 @@
+<!-- PASTE INTO: Webflow → Page Settings → Custom Code → Inside <head> -->
+<!-- Use this SAME head code on the Home page AND on all 3 legal pages -->
+
+<!-- Styles from CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MichaelAIAgency/webflow-terminjaeger@main/styles.css?v=3" />
+
+<!-- Webflow multi-embed fixes -->
+<style>
+  /* Stop Webflow wrappers from trapping section margins (white gaps) */
+  .tj-root { min-height: 0 !important; }
+  .tj-root > *:first-child { margin-top: 0 !important; }
+  .tj-root > *:last-child { margin-bottom: 0 !important; }
+
+  /* Use ONE smooth-scroll engine (the JS one) so jumping to sections isn't janky */
+  html, .tj-root { scroll-behavior: auto !important; }
+
+  /* Hero video — force the 16:9 frame on every screen (Wistia tries to make it portrait on mobile) */
+  .tj-hero__video { aspect-ratio: 16 / 9 !important; height: auto !important; overflow: hidden !important; }
+  .tj-hero__video iframe,
+  .tj-hero__video > iframe {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  /* Mobile: hard pixel cap so the hero video can NEVER balloon, even when Wistia
+     can't autoplay and falls back to a tall poster frame on phones. */
+  @media (max-width: 980px) {
+    .tj-hero__visual { max-width: 440px !important; width: 100% !important; margin: 0 auto !important; }
+    .tj-hero__video {
+      aspect-ratio: auto !important;
+      height: 56.25vw !important;   /* 16:9 of the screen width */
+      max-height: 250px !important; /* absolute ceiling */
+      overflow: hidden !important;
+      position: relative !important;
+    }
+    .tj-hero__video iframe,
+    .tj-hero__video > iframe {
+      position: absolute !important;
+      top: 0 !important; left: 0 !important;
+      width: 100% !important; height: 100% !important;
+    }
+  }
+
+  /* "Über Leon" — clean mobile stacking, photo never overlaps the heading */
+  @media (max-width: 980px) {
+    .tj-about__grid { grid-template-columns: 1fr !important; gap: 28px !important; }
+    .tj-about__photo {
+      position: relative !important;   /* MUST be relative — it anchors the absolutely-positioned img */
+      top: auto !important;
+      width: 100% !important;
+      max-width: 420px !important;
+      margin: 0 auto !important;
+      aspect-ratio: 1 / 1 !important;
+    }
+    .tj-about__photo img {
+      position: absolute !important;
+      inset: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+    }
+  }
+
+  /* Team — let the portrait heads break out the top of the frame on mobile too.
+     (2-up grid means the smaller photos no longer overlap the heading.) */
+  @media (max-width: 620px) {
+    .tj-team__grid { margin-top: 30px !important; } /* room for the heads that pop out */
+  }
+</style>
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Terminjäger" />
+<meta property="og:title" content="Qualifizierte Verkaufsgespräche in 48h | Terminjäger" />
+<meta property="og:description" content="Terminjäger baut Agenturen und B2B-Dienstleistern eine planbare Outbound-Pipeline mit vorqualifizierten Gesprächen." />
+<meta property="og:url" content="https://terminjaeger.de/" />
+<meta property="og:image" content="https://terminjaeger.de/assets/opengraph.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Qualifizierte Verkaufsgespräche in 48h | Terminjäger" />
+<meta name="twitter:description" content="Terminjäger baut Agenturen und B2B-Dienstleistern eine planbare Outbound-Pipeline mit vorqualifizierten Gesprächen." />
+<meta name="twitter:image" content="https://terminjaeger.de/assets/opengraph.png" />

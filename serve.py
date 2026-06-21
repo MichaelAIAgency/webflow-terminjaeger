@@ -4,7 +4,7 @@ styles.css / script.js always show up on a normal refresh."""
 import http.server
 import socketserver
 
-PORT = 4321
+PORT = 4322
 
 
 class NoCacheHandler(http.server.SimpleHTTPRequestHandler):
