@@ -41,6 +41,7 @@ html { scroll-behavior: smooth; }
   --tj-cream-300: #ece8dc;
   --tj-gray-400: #adb2b0;
   --tj-gray-500: #56635e;
+  --tj-gray-600: #47524d;
   --tj-gray-700: #34403b;
   --tj-ink-900: #161f1b;
   --tj-ink-black: #09120e;
@@ -1167,7 +1168,7 @@ html { scroll-behavior: smooth; }
 /* ============================================================
    ÜBER LEON (founder)
    ============================================================ */
-.tj-about { padding: 80px 0 84px; scroll-margin-top: 90px; }
+.tj-about { padding: 80px 0 84px; scroll-margin-top: 90px; background: var(--tj-cream-100); }
 .tj-about__grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -1187,7 +1188,7 @@ html { scroll-behavior: smooth; }
 }
 .tj-about__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .tj-about__ph { font-size: 14px; letter-spacing: .1em; text-transform: uppercase; color: var(--tj-gray-400); }
-.tj-about__body .tj-section-title { margin-bottom: 28px; }
+.tj-about__body .tj-section-title { margin-bottom: 28px; color: var(--tj-ink-900); }
 .tj-about__achievements {
   list-style: none;
   margin: 0 0 32px;
