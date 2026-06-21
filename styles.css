@@ -1188,6 +1188,7 @@ html { scroll-behavior: smooth; }
 }
 .tj-about__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .tj-about__ph { font-size: 14px; letter-spacing: .1em; text-transform: uppercase; color: var(--tj-gray-400); }
+.tj-about__body { color: var(--tj-ink-900); }
 .tj-about__body .tj-section-title { margin-bottom: 28px; color: var(--tj-ink-900); }
 .tj-about__achievements {
   list-style: none;
