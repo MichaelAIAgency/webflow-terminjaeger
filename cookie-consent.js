@@ -6,16 +6,16 @@
     .tj-cookie-banner {
       position: fixed;
       bottom: 24px;
-      left: 50%;
-      transform: translate(-50%, 100px);
-      width: 90%;
-      max-width: 580px;
+      left: 24px;
+      transform: translateY(120px);
+      width: calc(100% - 48px);
+      max-width: 360px;
       background: #133227;
       color: #f5f3ed;
       border: 1px solid rgba(237, 188, 108, 0.3);
-      border-radius: 16px;
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
-      padding: 24px;
+      border-radius: 14px;
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.5);
+      padding: 18px;
       z-index: 100000;
       opacity: 0;
       visibility: hidden;
@@ -23,22 +23,22 @@
       font-family: 'Lato', sans-serif;
     }
     .tj-cookie-banner.is-visible {
-      transform: translate(-50%, 0);
+      transform: translateY(0);
       opacity: 1;
       visibility: visible;
     }
     .tj-cookie-banner__title {
       font-family: 'Lora', Georgia, serif;
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 600;
       color: #edbc6c;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
     }
     .tj-cookie-banner__text {
-      font-size: 13.5px;
-      line-height: 1.6;
+      font-size: 12px;
+      line-height: 1.5;
       color: rgba(245, 243, 237, 0.85);
-      margin-bottom: 20px;
+      margin-bottom: 14px;
     }
     .tj-cookie-banner__text a {
       color: #edbc6c;
@@ -51,10 +51,10 @@
     .tj-cookie-banner__options {
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      margin-bottom: 24px;
+      gap: 9px;
+      margin-bottom: 16px;
       background: rgba(255, 255, 255, 0.05);
-      padding: 16px;
+      padding: 12px;
       border-radius: 10px;
     }
     .tj-cookie-banner__option {
@@ -71,19 +71,19 @@
       cursor: pointer;
     }
     .tj-cookie-banner__option-label {
-      font-size: 13.5px;
+      font-size: 12.5px;
       font-weight: 700;
       color: #f5f3ed;
     }
     .tj-cookie-banner__option-desc {
-      font-size: 12px;
+      font-size: 11px;
       color: rgba(245, 243, 237, 0.6);
       margin-top: 2px;
     }
     .tj-cookie-banner__buttons {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 12px;
+      gap: 8px;
     }
     @media (max-width: 480px) {
       .tj-cookie-banner__buttons {
@@ -94,9 +94,9 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 12px 20px;
+      padding: 9px 14px;
       border-radius: 8px;
-      font-size: 13.5px;
+      font-size: 12px;
       font-weight: 700;
       cursor: pointer;
       transition: all 0.2s ease;
@@ -135,36 +135,6 @@
       background: rgba(198, 136, 87, 0.3);
       color: #fff;
     }
-    
-    /* Floating trigger badge */
-    .tj-cookie-trigger {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      width: 40px;
-      height: 40px;
-      background: #133227;
-      border: 1px solid rgba(237, 188, 108, 0.4);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #edbc6c;
-      cursor: pointer;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      z-index: 99999;
-      transition: transform 0.2s, background 0.2s, color 0.2s;
-    }
-    .tj-cookie-trigger:hover {
-      transform: scale(1.1);
-      background: #1f4939;
-      color: #fff;
-    }
-    .tj-cookie-trigger svg {
-      width: 20px;
-      height: 20px;
-    }
-    
     /* Content blocker styles for Wistia iFrames */
     .tj-video-blocked {
       position: absolute;
@@ -228,9 +198,9 @@
     } catch(e) {}
   }
 
-  // Manage iframe loading dynamically based on marketing consent
+  // Videos are always loaded and visible regardless of cookie consent.
   function updateExternalMedias(consent) {
-    var hasMarketing = consent && consent.marketing;
+    var hasMarketing = true;
     var iframes = document.querySelectorAll('.tj-vcard__video iframe, .tj-case__video iframe');
     
     iframes.forEach(function(iframe) {
@@ -314,24 +284,31 @@
       </div>
     `;
     
-    var trigger = document.createElement('button');
-    trigger.className = 'tj-cookie-trigger';
-    trigger.setAttribute('aria-label', 'Cookie-Einstellungen ändern');
-    trigger.innerHTML = `
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M12 2a10 10 0 0 0-10 10c0 5.523 4.477 10 10 10a9.98 9.98 0 0 0 8-4 .75.75 0 0 0-.43-1.18c-.89-.25-1.57-.93-1.82-1.82a.75.75 0 0 0-1.18-.43 9.98 9.98 0 0 0-4-8z"/>
-        <path d="M12 2v10a9.98 9.98 0 0 0 4 8"/>
-        <circle cx="7.5" cy="10.5" r=".5" fill="currentColor"/>
-        <circle cx="11.5" cy="7.5" r=".5" fill="currentColor"/>
-        <circle cx="7.5" cy="15.5" r=".5" fill="currentColor"/>
-        <circle cx="15.5" cy="11.5" r=".5" fill="currentColor"/>
-        <circle cx="11.5" cy="16.5" r=".5" fill="currentColor"/>
-      </svg>
-    `;
-    
     document.body.appendChild(banner);
-    document.body.appendChild(trigger);
-    
+
+    // Re-open the banner from a link in the footer (instead of a floating button).
+    function openBanner() {
+      var current = getConsent() || { essential: true, marketing: false };
+      var cb = document.getElementById('tj-cookie-opt-marketing');
+      if (cb) cb.checked = !!current.marketing;
+      banner.classList.add('is-visible');
+    }
+
+    // Inject a "Cookie-Einstellungen" link into the footer's "Rechtliches" column.
+    var heads = document.querySelectorAll('.tj-footer__h');
+    for (var hi = 0; hi < heads.length; hi++) {
+      if (heads[hi].textContent.trim().toLowerCase() === 'rechtliches') {
+        var col = heads[hi].parentNode;
+        if (col.querySelector('.tj-cookie-settings')) continue;
+        var link = document.createElement('a');
+        link.href = '#';
+        link.className = 'tj-cookie-settings';
+        link.textContent = 'Cookie-Einstellungen';
+        link.addEventListener('click', function(e) { e.preventDefault(); openBanner(); });
+        col.appendChild(link);
+      }
+    }
+
     if (!consent) {
       setTimeout(function() {
         banner.classList.add('is-visible');
@@ -340,13 +317,7 @@
     } else {
       updateExternalMedias(consent);
     }
-    
-    trigger.addEventListener('click', function() {
-      var currentConsent = getConsent() || { essential: true, marketing: false };
-      document.getElementById('tj-cookie-opt-marketing').checked = !!currentConsent.marketing;
-      banner.classList.toggle('is-visible');
-    });
-    
+
     document.getElementById('tj-cookie-btn-accept').addEventListener('click', function() {
       var newConsent = { essential: true, marketing: true };
       setConsent(newConsent);
